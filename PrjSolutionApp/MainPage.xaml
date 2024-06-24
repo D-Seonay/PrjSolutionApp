@@ -3,25 +3,44 @@
              x:Class="YourNamespace.MainPage">
 
     <StackLayout Padding="10">
-        <Label Text="Choisissez un prénom et une année"
-               FontSize="20"
+           
+           <Frame HeightRequest="200"
+               WidthRequest="200"
+               CornerRadius="100"
+               IsClippedToBounds="True"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+               Margin="0,0,0,20">
+            <Image Source="chaton.jpg"
+                   Aspect="AspectFill"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   />
+        </Frame>
+           
+           <Label Text="Choisissez un prénom et une année"
+                  FontSize="20"
+                  HorizontalOptions="Center"
+                  VerticalOptions="CenterAndExpand"
+                  Margin="0,0,0,20" />
 
         <Entry x:Name="PrenomEntry"
-               Placeholder="Entrez le prénom" />
+               Placeholder="Entrez le prénom"
+               Margin="0,0,0,20" />
 
         <Entry x:Name="AnneeEntry"
                Placeholder="Entrez l'année"
-               Keyboard="Numeric" />
+               Keyboard="Numeric"
+               Margin="0,0,0,20" />
 
         <Button Text="Rechercher"
-                Clicked="OnRechercherClicked" />
+                Clicked="OnRechercherClicked"
+                Margin="0,0,0,20" />
 
         <Label x:Name="ResultLabel"
                FontSize="20"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+               VerticalOptions="CenterAndExpand"
+               Margin="0,20,0,0" />
     </StackLayout>
 
 </ContentPage>
