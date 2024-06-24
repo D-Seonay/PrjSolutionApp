@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourNamespace.MainPage">
+
+    <StackLayout Padding="10">
+        <Label Text="Choisissez un prénom et une année"
+               FontSize="20"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <Entry x:Name="PrenomEntry"
+               Placeholder="Entrez le prénom" />
+
+        <Entry x:Name="AnneeEntry"
+               Placeholder="Entrez l'année"
+               Keyboard="Numeric" />
+
+        <Button Text="Rechercher"
+                Clicked="OnRechercherClicked" />
+
+        <Label x:Name="ResultLabel"
+               FontSize="20"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>
